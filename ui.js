@@ -18,11 +18,8 @@ class UI {
       'src',
       `http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`
       );
-    this.humidity.textContent = 'Humidity: ' + weather.main.humidity;
-    this.feels.textContent = 'Feels like: ' + weather.main.feels_like + ' °C';
-    this.wind.textContent = ` ${(weather.wind.speed * 3.6)} km/h, at ${weather.wind.deg}°`;
-
-    
-    
+    this.humidity.textContent = `Humidity: ${weather.main.humidity}%`;
+    this.feels.textContent = `Feels like: ${weather.main.feels_like}°C`;
+    this.wind.textContent = ` ${(weather.wind.speed * 3.6).toFixed(2)} km/h, at ${weather.wind.deg}°`;    
   }
 }
