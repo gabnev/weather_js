@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" integrity="sha384-3fdgwJw17Bi87e1QQ4fsLn4rUFqWw//KU0g8TvV6quvahISRewev6/EocKNuJmEw" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
   <title>Weather JS</title>
 </head>
 
@@ -18,9 +19,9 @@
         <h3 id="w-temp-string"></h3>
         <img id="w-icon">
         <ul class="list-group mt-3" id="w-details">
-          <li class="list-group-item" id="w-humidity"></li>
+          <li class="list-group-item" id="w-humidity"></i></li>
           <li class="list-group-item" id="w-feels-like"></li>
-          <li class="list-group-item" id="w-wind"></li>
+          <li class="list-group-item" id="w-wind"><i class="fas fa-wind"></i></li>
         </ul>
         <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#locModal">
           Set location
@@ -28,6 +29,8 @@
       </div>
     </div>
   </div>
+
+  <i class="fas fa-humidity"></i>
 
   <div class="modal fade" id="locModal" tabindex="-1" aria-labelledby="locModalLabel" aria-hidden="true">
     <div class="modal-dialog">
